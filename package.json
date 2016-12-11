@@ -1,0 +1,38 @@
+{
+  "name": "pouchdb-doc-api",
+  "version": "0.0.0-development",
+  "description": "PouchDB plugin for a document-bound API",
+  "main": "index.js",
+  "scripts": {
+    "test": "tape 'test/{integration,unit}/*-test.js'",
+    "test:coverage": "istanbul cover tape test/{integration,unit}/*-test.js",
+    "test:coverage:upload": "istanbul-coveralls",
+    "posttest": "standard",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gr2m/pouchdb-doc-api.git"
+  },
+  "keywords": [
+    "pouchdb",
+    "plugin"
+  ],
+  "author": "Gregor Martynus",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/gr2m/pouchdb-doc-api/issues"
+  },
+  "homepage": "https://github.com/gr2m/pouchdb-doc-api#readme",
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "istanbul-coveralls": "^1.0.3",
+    "pouchdb-adapter-memory": "^6.0.7",
+    "pouchdb-core": "^6.0.7",
+    "simple-mock": "^0.7.3",
+    "standard": "^8.6.0",
+    "tap-spec": "^4.1.1",
+    "tape": "^4.6.3",
+    "semantic-release": "^6.3.2"
+  }
+}
