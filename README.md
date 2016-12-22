@@ -29,6 +29,24 @@ api.set({foo: 'bar'})
 })
 ```
 
+## 🔏📃 Security notice
+
+In case you want to store sensitive data, be aware that PouchDB does not remove
+data but creates new revisions. The older revisions remain accessible.
+
+The only exception to this are [local documents](http://docs.couchdb.org/en/2.0.0/api/local.html)
+with an docId prefixed by `_local/`. So say you want to store an API key or
+session ID using `pouchdb-doc-api`, I strongly recommend to us a docId like
+`_local/session`. Full usage example
+
+```js
+var db = new PouchDB('mydb')
+var api = db.doc('_local/session')
+```
+
+`api.set` and `api.unset` will no remove previously stored data without leaving
+revisions that could be recovered.
+
 ## API
 
 - [Factory](#factory)
