@@ -27,7 +27,7 @@
   "devDependencies": {
     "istanbul": "^0.4.5",
     "istanbul-coveralls": "^1.0.3",
-    "pouchdb-adapter-memory": "^6.0.7",
+    "pouchdb-adapter-memory": "^6.2.0",
     "pouchdb-core": "^6.0.7",
     "simple-mock": "^0.7.3",
     "standard": "^8.6.0",
