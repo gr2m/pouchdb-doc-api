@@ -28,7 +28,7 @@
     "istanbul": "^0.4.5",
     "istanbul-coveralls": "^1.0.3",
     "pouchdb-adapter-memory": "^6.0.7",
-    "pouchdb-core": "^6.0.7",
+    "pouchdb-core": "^6.3.4",
     "simple-mock": "^0.7.3",
     "standard": "^8.6.0",
     "tap-spec": "^4.1.1",
