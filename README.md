@@ -1,5 +1,7 @@
 # pouchdb-doc-api
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/gr2m/pouchdb-doc-api.svg)](https://greenkeeper.io/)
+
 > PouchDB plugin for a document-bound API
 
 [![Build Status](https://travis-ci.org/gr2m/pouchdb-doc-api.svg?branch=master)](https://travis-ci.org/gr2m/pouchdb-doc-api)
